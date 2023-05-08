@@ -213,7 +213,6 @@ img{
 }
 .modelo{
     background-color: var(--grisClaro);
-
     margin-bottom: 2rem;
     padding-left: 4rem;
     color: var(--primario);
@@ -225,6 +224,12 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transition-property: transform background-size;
+    transition-duration: .3s;
+}
+.modelo:hover{
+    transform: scale(1.1);
+    background-size: 30rem;
 }
 @media (min-width: 992px) { 
     .modelo{
